@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 
 import HomePage from './pages/HomePage';
 import Ejemplo01 from './pages/Ejemplo01';
+import Ejemplo02 from './pages/Ejemplo02';
+import Mapa from './pages/Mapa';
 
 function App() {
   return (
@@ -16,8 +18,10 @@ function App() {
         <Nav />
         <Routes>
           {/*aca vamos a delcarar todas las rutas*/}
-          <Route path='/' element={<HomePage/>}></Route>
-          <Route path='/ejemplo01' element={<Ejemplo01/>}></Route>
+          <Route path='/' element={<HomePage />}></Route>
+          <Route path='/ejemplo1' element={<Ejemplo01 />}></Route>
+          <Route path='/ejemplo2' element={<Ejemplo02 />}></Route>
+          <Route path='/ejemplo3' element={<Mapa />}></Route>
         </Routes>
       </BrowserRouter>
       <Footer />
